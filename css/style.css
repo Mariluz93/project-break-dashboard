@@ -1,4 +1,14 @@
 /*root*/
+:root {
+    --color-text: #ffffff;
+    --color-link-hover: var(--color-text);
+    --color-background: #000001;
+    --color-scrollbar: #888;
+    --font-primary: "Mulish", sans serif;
+    --font-light: 300;
+    --font-normal: 400;
+    ---font-bold: 700;
+}
 
 /*reset*/
 html,
@@ -131,8 +141,36 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-/* mis css*/
-img {
+
+/*mis CSS*/
+body {
+    font-family: var(--font-primary);
+    color: var(--color-text);
+    background-size: cover;
+    background-position: center;
+    min height: 250vh;
+}
+
+.main {
+    margin: 30px 50px;
+}
+
+/*NAVEGADOR*/
+
+.nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    gap: 30px;
+    background-color: rgba(255, 255, 255, 0.341);
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.nav a img {
     width: 30px;
-    height: auto;
 }

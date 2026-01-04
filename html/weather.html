@@ -4,22 +4,21 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/style.css">
-        <title>Dashboard</title>
+        <link rel="stylesheet" href="../css/weather.css">
+        <title>Consulta el tiempo</title>
     </head>
     <body>
         <header class="header">
             <a href="index.html">
-                <img src="../assets/img/rocket.png" alt="goHome">
+                <img src="../assets/img/home.png" alt="goHome">
                 <h2>GO HOME</h2>
             </a>
         </header>
         <main class="main">
-            <section class="time-container">
-                <div class="weather">
-                    <div id="currentWeather" class="currentWeather"></div>
-                    <ul id="forecastWeather" class="forecastWeather"></ul>
-                </div>
-            </section>
+            <div class="weather">
+                <div id="currentWeather" class="currentWeather"></div>
+                <ul id="forecastWeather" class="forecastWeather"></ul>
+            </div>
         </main>
         <footer class="footer">
             <nav>
@@ -36,7 +35,8 @@
                     <img src="../assets/img/cloud.png" alt="cloud">
                 </a>
         </footer>
-        <script src="../js/weather.js"></script>
         <script src="../js/script.js"></script>
+        <script src="../js/weather.js"></script>
+        
     </body>
 </html>
