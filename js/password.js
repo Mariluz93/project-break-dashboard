@@ -7,35 +7,45 @@ const upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 const lower = "abcdefghijklmnopqrstuvwxyz"
 const symbols = "!@#$%^&*()-_=+"
 
+length.addEventListener('input', () => {
+    let value = parseInt(length.value, 10);
+
+    if (isNaN(value)) return;
+
+    if (value > 50) length.value = 50;
+    if (value < 12) length.value = 12;
+});
+
 function randomNumber(max) {
     rNumber = Math.floor(Math.random() * max)
     return rNumber;
 }
-passwordButton.addEventListener('click', () => {
-    function generatePassword() {
-        const all = number + upper + lower + symbols;
+
+
+function generatePassword() {
+    const all = number + upper + lower + symbols;
     
-        const passwordLength = parseInt(length.value);
-        const randomNum = number[randomNumber(number.length)];
-        const randomUpper = upper[randomNumber(upper.length)];
-        const randomLower = lower[randomNumber(lower.length)];
-        const randomSymbol = symbols[randomNumber(symbols.length)];
+    let passwordLength = parseInt(length.value, 10);
 
-        const password = [];
+    const password = [];
 
-        password.push(randomLower, randomNum, randomSymbol, randomUpper)
+    const randomNum = number[randomNumber(number.length)];
+    const randomUpper = upper[randomNumber(upper.length)];
+    const randomLower = lower[randomNumber(lower.length)];
+    const randomSymbol = symbols[randomNumber(symbols.length)];
+
+
+    password.push(randomLower, randomNum, randomSymbol, randomUpper)
     
-        for (let i = 4; i < passwordLength; i++) {
-            let random = all[randomNumber(all.length)]
-            password.push(random);
-        }
-
-        const finalPassword = password.sort(() => Math.random() - 0.5).join("");
-
-        passwordResult.textContent = finalPassword;
+    for (let i = password.length; i < passwordLength; i++) {
+        let random = all[randomNumber(all.length)]
+        password.push(random);
     }
-    
-    generatePassword()
-})
+
+    const finalPassword = password.sort(() => Math.random() - 0.5).join("");
+
+    passwordResult.textContent = finalPassword;
+}
+passwordButton.addEventListener('click', generatePassword);
 
 

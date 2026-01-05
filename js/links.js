@@ -8,7 +8,7 @@ function linksDom(link) {
     const createLi = document.createElement('li');
     createLi.innerHTML = `
         <a href="${link.url}" target="_blank">${link.name}</a>
-        <button>X</button>
+        <button>x</button>
     `;
     const deleteButton = createLi.querySelector('button');
     linksContainer.appendChild(createLi);
