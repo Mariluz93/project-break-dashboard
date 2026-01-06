@@ -1,0 +1,112 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.header {
+    margin: 15px 15px;
+}
+
+.header a {
+    display: flex;
+    color: inherit;
+    text-decoration: none;
+}
+
+.header a h2 {
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.header img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-container {
+    background-color: #111111b4;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    width: 100%;
+    max-width: 420px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 23px;
+    margin: 15px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.title img {
+    width: 25px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.input-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background-color: #222;
+    opacity: 0.8;
+    color: #fff;
+}
+
+.add-link-button {
+    padding: 10px 15px;
+    background-color: #0199be;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 20px;
+    font-family: var(--font-primary);
+}
+
+.add-link-button:hover {
+    background-color: #666;
+}
+
+.links-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    margin: 10px 20px;
+    padding: 30px;
+    background-color: #5252523f;
+    border-radius: 10px;
+}
+
+.links-container li a {
+    text-decoration: none;
+    color: white;
+}
+
+.links-container li button {
+    border: none;
+    background-color: #ffffff4b;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.links-container li button:hover {
+    background-color: #ffffff69;
+}

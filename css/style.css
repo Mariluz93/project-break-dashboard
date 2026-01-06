@@ -183,7 +183,7 @@ nav a img:hover {
     filter: brightness(1.3);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
     .footer {
         display: none;
     }

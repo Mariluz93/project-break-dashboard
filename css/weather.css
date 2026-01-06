@@ -1,0 +1,109 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.header {
+    margin: 15px 15px;
+}
+
+.header a {
+    display: flex;
+    color: inherit;
+    text-decoration: none;
+}
+
+.header a h2 {
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.header img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather {
+    background-color: #111111b4;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.weather #currentWeather {
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.weather #forecastWeather li {
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.currentWeather {
+    text-align: left;
+    line-height: 8px;
+}
+
+.current-data {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 15px 0px;
+}
+
+.current-grades {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.current-grades div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.current-grades div p {
+    font-size: 50px;
+    letter-spacing: -3px;
+}
+
+.current-grades div img {
+    height: 30px;
+}
+
+.current-data ul {
+    line-height: 20px;
+    font-size: 16px;
+}
+
+div h2 {
+    margin-bottom: 15px;
+}
+
+.forecastWeather {
+    display: flex;
+    padding-bottom: 15px;
+    gap: 15px;
+    list-style: none;
+    overflow-x: scroll;
+    white-space: nowrap;
+    max-width: 360px;
+}
+
+.forecastWeather li span p {
+    margin-bottom: -5px;
+    font-size: 15px;
+}

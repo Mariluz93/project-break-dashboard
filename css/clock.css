@@ -1,0 +1,60 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.header {
+    margin: 15px 15px;
+}
+
+.header a {
+    display: flex;
+    color: inherit;
+    text-decoration: none;
+}
+
+.header a h2 {
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.header img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    background-color: #111111b4;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    width: 100%;
+    max-width: 420px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.753);
+}
+
+.clock .time {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.clock .date,
+.clock .time-zone {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.clock .message {
+    margin-top: 20px;
+}
