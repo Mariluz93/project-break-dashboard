@@ -35,7 +35,7 @@ const currentWeatherDOM = (data) => {
                 <img  src="https:${weatherIcon}" class="weather-icon" alt="${weatherText}">
                 <div>
                     <p>${temp_c}</p>
-                    <img src="../assets/img/celsius.png" alt="grados">
+                    <img src="./assets/img/celsius.png" alt="grados">
                 </div>
             </div>
             <ul>
